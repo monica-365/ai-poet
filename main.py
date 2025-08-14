@@ -1,5 +1,5 @@
 #from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+#from langchain_openai import ChatOpenAI
 from langchain_community.llms import OpenAI
 #load_dotenv()
 
@@ -17,4 +17,5 @@ if st.button("시 작성 요청하기"):
     llm = OpenAI()
     result = llm.predict(title+"에 대한 시를 써줘")
     st.write(result.content)
+
 
